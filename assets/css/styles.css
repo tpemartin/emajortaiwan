@@ -1,0 +1,43 @@
+emajor-title {
+  text-color:red;
+}
+
+.emajor-title {
+  color:rgb(251,116,116);
+  text-align:center;
+}
+
+span.short-title {
+  font-style:normal;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.emajor-card {
+  margin-bottom:25px;
+}
+
+.no-icon-list {
+  list-style-type:none;
+}
+
+.major-color {
+  color:rgb(251,116,116);
+}
+
+span.emajor-color {
+  color:rgb(251,116,116);
+  margin-left:4px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+}
+
+.topline {
+  border-top:1px solid rgb(217, 217, 217);
+}
+
+.emajor-color {
+  color:rgb(251,116,116);
+}
+

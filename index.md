@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <h4 class="text-center card-title"> <i class="fa fa-glass" style="color:rgb(255,212,59);"></i></h4>
-{% for post in site.posts %}
+{% for post in site.posts limit:2 %}
                     <div class="card-block emajor-card">
                         <p class="card-text news-color"><span class="short-title">{{ post.title }}<i class="fa fa-angle-double-right" style="margin-left:3px;"></i>
                         </span>

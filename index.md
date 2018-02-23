@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
 
@@ -55,10 +58,17 @@
             <div class="row">
                 <div class="col-sm-3">
                     <h4 class="text-center card-title"> <i class="fa fa-glass" style="color:rgb(255,212,59);"></i></h4>
+
                     <div class="card-block emajor-card">
-                        <p class="card-text news-color"><span class="short-title">青少年的享樂態度<i class="fa fa-angle-double-right" style="margin-left:3px;"></i> </span>世界各國的年輕人本因風土民情不同，而有不同的生活習慣與文化，然而根據調查顯示，21世紀初以來，歐美富裕國家的青年男女有一共同的趨勢，與他們父母那個世代相比，現在的年輕人比較少喝酒、抽菸、互相傷害以及性經驗。 <i class="fa fa-arrow-circle-right emajor-color"></i></p>
+                        <p class="card-text news-color"><span class="short-title">青少年的享樂態度<i class="fa fa-angle-double-right" style="margin-left:3px;"></i>
+                        </span>
+              {% for post in site.posts %}
+                        {{ post.content }}
+               {% endfor %}
+               <i class="fa fa-arrow-circle-right emajor-color"></i></p>
                         <div></div>
                     </div>
+
                     <div class="card-block emajor-card">
                         <p class="card-text"><span class="short-title">脫離貧窮不是夢<i class="fa fa-angle-double-right" style="margin-left:3px;"></i> </span>孟加拉是許多有效脫貧方法的驗證地點，其中最有名的例子是便是窮人微型貸款，由銀行家穆罕默德•尤努斯（亦是2006年諾貝爾和平獎得主）創建的格拉明鄉村銀行在1970年代開始實行。最近孟加拉又驗證了一項新的脫貧創意： 鼓勵農村壯年男子到城市工作。
                             <i

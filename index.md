@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <h4 class="text-center card-title"> <i class="fa fa-glass" style="color:rgb(255,212,59);"></i></h4>
-{% for post in site.posts limit:2 %}
+{% for post in site.categories.short limit:2 %}
                     <div class="card-block emajor-card">
                         <p class="card-text news-color"><span class="short-title">{{ post.title }}<i class="fa fa-angle-double-right" style="margin-left:3px;"></i>
                         </span>
@@ -53,15 +53,18 @@
                 </div>
                 <div class="col-sm-3">
                     <h4 class="text-center card-title"> <i class="fa fa-comment-o" style="color:rgb(42,120,23);"></i></h4>
+{% for post in site.categories.long limit:2 %}
+
                     <div class="card-block emajor-card">
-                        <p class="card-text"><span class="short-title">終身學習<i class="fa fa-angle-double-right" style="margin-left:3px;"></i> </span>教育與學習能促進社會階級流動，更賦予個人選擇自由的機會，但是現今科技發展的速度顛覆我們的想像，傳統上攻讀碩博士或是在職訓練，成本偏高也有其侷限性，更無法讓我們短時間內累積足夠的人力資本以因應30~40年的職涯發展，其實我們更需要有終身學習的思維和行動。
+                        <p class="card-text"><span class="short-title">{{ post.title }}<i class="fa fa-angle-double-right" style="margin-left:3px;"></i> </span>
+
+                        {{ post.excerpt }}
+
                             <i
                                 class="fa fa-arrow-circle-right emajor-color"></i>
                         </p>
                     </div>
-                    <div class="card-block emajor-card">
-                        <p class="card-text"><span class="short-title">國家與個人<i class="fa fa-angle-double-right" style="margin-left:3px;"></i> </span>這裡曾是烏托邦 世界最高的石油蘊藏，良好的地理位置，國民人口僅有三千萬，她的民主政體相對周邊國家穩定，五十年前的國民財富與略遜於大英帝國，在本世紀初仍是南美洲最富裕的國家。她是委內瑞拉。 <i class="fa fa-arrow-circle-right emajor-color"></i></p>
-                    </div>
+{% endfor %}
                 </div>
                 <div class="col-sm-3">
                     <h4 class="text-center card-title"> <i class="fa fa-bar-chart-o" style="color:rgb(66,23,120);"></i></h4>

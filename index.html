@@ -63,15 +63,11 @@ layout: default
                 </div>
                 <div class="col-sm-3">
                     <h4 class="text-center card-title"> <i class="fa fa-bar-chart-o" style="color:rgb(66,23,120);"></i></h4>
+{% for post in site.categories.data-visualization limit:3 %}
                     <div class="card-block emajor-card">
-                        <p class="card-text"><i class="fa fa-quora" style="margin-right:3px;font-size:18px;"></i>大家知道當整體物價水準上漲時，所得水準高還是低的家庭所受到的購買力折損比較大？<i class="fa fa-arrow-circle-right emajor-color"></i> </p>
+                        <p class="card-text"><i class="fa fa-quora" style="margin-right:3px;font-size:18px;"></i>{{ post.excerpt | remove: '<p>' | remove: '</p>'}}<i class="fa fa-arrow-circle-right emajor-color"></i> </p>
                     </div>
-                    <div class="card-block emajor-card">
-                        <p class="card-text"><i class="fa fa-quora" style="margin-right:3px;font-size:18px;"></i>大家知道當整體物價水準上漲時，所得水準高還是低的家庭所受到的購買力折損比較大？ <i class="fa fa-arrow-circle-right emajor-color"></i></p>
-                    </div>
-                    <div class="card-block emajor-card">
-                        <p class="card-text"><i class="fa fa-quora" style="margin-right:3px;font-size:18px;"></i>大家知道當整體物價水準上漲時，所得水準高還是低的家庭所受到的購買力折損比較大？<i class="fa fa-arrow-circle-right emajor-color"></i> </p>
-                    </div>
+{% endfor %}
                 </div>
                 <div class="col-sm-3" style="height:375px;">
                     <h5>追蹤臉書粉專 </h5><div class="fb-page" data-href="https://www.facebook.com/Emajortaiwanforu/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Emajortaiwanforu/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Emajortaiwanforu/"></a></blockquote></div>

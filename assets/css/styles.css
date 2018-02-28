@@ -41,3 +41,8 @@ span.emajor-color {
   color:rgb(251,116,116);
 }
 
+a.emajor:link, a.emajor:visited {
+    color: rgba(33,37,41,0.9);
+    text-decoration: none;
+    cursor: auto;
+}

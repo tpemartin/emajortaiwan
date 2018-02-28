@@ -46,6 +46,9 @@ pagination:
     </div>
     <div class="projects-horizontal">
         <div class="container">
+          {% for post in paginator.posts %}
+  <h1>{{ post.title }}</h1>
+{% endfor %}
             <div class="row articles">
               {% for post in paginator.posts limit:6 %}
                 <div class="col-sm-6 item">

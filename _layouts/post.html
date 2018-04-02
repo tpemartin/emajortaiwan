@@ -34,4 +34,8 @@ layout: default
   <h3>Daily Juice:tropical_drink:{{page.title}}</h3>
 {% endif%}
 
+{{page.date |date: "%Y-%m-%d"}}
+{{content}}
+:point_right:<a href="{{page.original-article}}">點我看原文</a>
+
 </div>

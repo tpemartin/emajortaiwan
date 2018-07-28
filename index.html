@@ -12,8 +12,8 @@ layout: homeindex
                         <p class="card-text news-color"><span class="short-title">{{ post.title }}<i class="fa fa-angle-double-right" style="margin-left:3px;"></i>
                         </span>
                         {{ post.excerpt }}
-
-               <i class="fa fa-arrow-circle-right emajor-color"></i></p>
+              <a href="{{post.url | prepend: site.baseurl}}" class="action"><i class="fa fa-arrow-circle-right emajor-color"></i></a>
+             </p>
                         <div></div>
                     </div>
 </a>
@@ -27,9 +27,7 @@ layout: homeindex
                         <p class="card-text"><span class="short-title">{{ post.title }}<i class="fa fa-angle-double-right" style="margin-left:3px;"></i> </span>
 
                         {{ post.excerpt }}
-
-                            <i
-                                class="fa fa-arrow-circle-right emajor-color"></i>
+                        <a href="{{post.url | prepend: site.baseurl}}" class="action"><i class="fa fa-arrow-circle-right emajor-color"></i></a>
                         </p>
                     </div>
 </a>
@@ -40,7 +38,8 @@ layout: homeindex
 {% for post in site.categories.data-visualization limit:3 %}
 <a class="emajor" href="{{post.url | prepend: site.baseurl}}">
                     <div class="card-block emajor-card">
-                        <p class="card-text"><i class="fa fa-quora" style="margin-right:3px;font-size:18px;"></i>{{ post.excerpt | remove: '<p>' | remove: '</p>'}}<i class="fa fa-arrow-circle-right emajor-color"></i> </p>
+                        <p class="card-text"><i class="fa fa-quora" style="margin-right:3px;font-size:18px;"></i>{{ post.excerpt | remove: '<p>' | remove: '</p>'}}              <a href="{{post.url | prepend: site.baseurl}}" class="action"><i class="fa fa-arrow-circle-right emajor-color"></i></a>
+ </p>
                     </div>
 </a>
 {% endfor %}
@@ -57,7 +56,7 @@ layout: homeindex
                     <div>
                         <hr>
                     </div>
-                    <h5>熱門文章 </h5>
+                    <!-- <h5>熱門文章 </h5>
                     <div class="invisible">
                         <ul class="no-icon-list" style="padding-left:3px;">
                             <li><i class="fa fa-glass" style="color:rgb(255,212,59);"></i></li>
@@ -68,7 +67,7 @@ layout: homeindex
                             <li>理性視覺體驗 </li>
                         </ul>
                         <p> </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

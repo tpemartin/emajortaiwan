@@ -58,4 +58,4 @@ pagination:
 
 ############################################################
 
-gems: [jekyll-paginate-v2]
+plugins: [jekyll-paginate-v2,jemoji]
